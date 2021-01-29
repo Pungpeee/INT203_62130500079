@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web pages</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <style>
+        body {
+            font-family: 'Caudex', serif;
+        }
+
+        .leftbody {
+            width: 50%;
+        }
+
+        p,
+        a {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white-100">
+
+    <div class="topbox flex justify-between border-solid border-2 border-black mx-20 mt-20">
+        <div class="logo flex items-center">
+            <img src="images/logo.jpg" alt="logo">
+            <div class="boxleft text-lg">Friends for Dinner</div>
+        </div>
+
+        <div class="boxright flex items-center m-6">
+            <a href="#" class="mx-3 hover:text-gray-600">Episodes</a>
+            <a href="#" class="mx-3 hover:text-gray-600">About the show</a>
+            <a href="#" class="mx-3 hover:text-gray-600">Recipes</a>
+            <a href="#" class="mx-3 hover:text-gray-600">Support</a>
+            <a href="#" class="mx-3 hover:text-gray-600">Contact Us</a>
+        </div>
+    </div>
+    <div class="bigbox flex items-center border-solid border-2 border-black mt-3 mx-20">
+        <div class="leftbody flex justify-center ">
+            <div class="w-9/12">
+                <div class="font-medium text-7xl mb-4">
+                    <h1>Friends for Dinner</h1>
+                </div>
+                <div class="font-medium text-2xl mb-8">
+                    <p>Podcasting about food and drinks why we love them.</p>
+                </div>
+                <div class="statement flex content-start my-2">
+                    <div class="subscribe mx-2 ">
+                        <p>Subscribe via </p>
+                    </div>
+                    <div class="underline ">
+                        <a href="https://support.apple.com/th-th/HT201859">Apple Podcast,</a>
+                        <a href="https://www.stitcher.com/">Stitcher,</a>
+                        <a href="https://podcasts.google.com/">Google Podcast,</a>
+                        <a href="https://www.spotify.com/th-th/">Spotify</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="photo" style="width:50%">
+            <img src="images/picture.webp" style="width: 488px; height: 681px; width:130%" alt="food">
+        </div>
+
+    </div>
+
+    <div class="bigbox2 border-solid border-2 border-black flex mx-20 -mt-0">
+
+        <div class="photo2" style="width: 100%">
+            <img src="images/picture2.webp" style="width:488px; height:661px; width:130%" alt="food2">
+        </div>
+        <div class="mx-auto flex items-center justify-center w-full ">
+            <div class="w-3/6">
+                <div class="font-medium text-4xl my-14">
+                    <h1>New Episode Every Week</h1>
+                </div>
+                <p>I'm a paragraph. Click here to add your own text and edit me.
+                    It’s easy. Just click “Edit Text” or double click me to add your
+                    own content and make changes to the font.
+                </p>
+
+                <div class="my-14">
+                    <button
+                        class="border-solid border-2 border-black bg-black text-white px-14 py-2  transition duration-500 hover:bg-white hover:text-black hover:border-2 ">Listen
+                        Now</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
