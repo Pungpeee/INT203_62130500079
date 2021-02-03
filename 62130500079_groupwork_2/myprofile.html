@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Basic Vue Js - HelloWorld App</title>
+  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+
+  <!-- Using via Google Web Fonts -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- https://tailwindcss.com/docs/installation -->
+
+  <!-- Using Tailwind via CDN -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js" rel="stylesheet" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css"/>
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+
+  <!-- Vue CDN -->
+
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        
+    <div class="container mt-5 d-flex justify-content-center">
+        <div class="card p-3">
+            <div class="d-flex align-items-center">
+                
+                <div class="ml-3 w-100">
+                    <img v-bind:src="image" class="mr-24 rounded" style="width:35%">
+                    <div class="float-right">
+                    <h4 class="mb-0 mt-0">{{firstname}}  {{lastname}} </h4> <span>{{about}}</span>
+                    <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
+                        <div class="d-flex flex-column"> <span class="articles">Articles</span> <span class="number1">38</span> </div>
+                        <div class="d-flex flex-column"> <span class="followers">Followers</span> <span class="number2">980</span> </div>
+                        <div class="d-flex flex-column"> <span class="rating">Rating</span> <span class="number3">8.9</span> </div>
+                    </div>
+                    <div class="button mt-2 d-flex flex-row align-items-center"> <a v-bind:href="chat" class="btn btn-sm btn-outline-primary w-100">Chat</button> <a v-bind:href="follow" class="btn btn-sm btn-primary w-100 ml-2">Follow</a> </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- my main.js -->
+
+  <script src="./profile.js"></script>
+</body>
+ื
+</html>
